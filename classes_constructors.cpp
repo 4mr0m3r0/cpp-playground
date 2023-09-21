@@ -102,7 +102,7 @@ void check2()
     }
 }
 
-int main()
+void constructors_main()
 {
     check2();
 }

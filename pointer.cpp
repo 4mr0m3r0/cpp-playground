@@ -12,7 +12,7 @@ void update(int *a, int *b) {
     *b = temp_b;
 }
 
-int main() {
+int pointer_main() {
     int a, b;
     cin >> a;
     cin >> b;

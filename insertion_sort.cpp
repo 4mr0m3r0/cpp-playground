@@ -18,7 +18,7 @@ void insertion_sort(int numbers[], int size) {
     }
 }
 
-int main() {
+int insertion_sort_main() {
     int numbers[] = { 8, 9, 3, 7, 1, 0, 2, 4, 12, 13, 10 };
     int ordered_numbers[] = { 0, 1, 2, 3, 4, 7, 8, 9, 10, 12, 13 };
     int size = 11;

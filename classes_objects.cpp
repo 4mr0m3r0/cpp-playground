@@ -24,7 +24,7 @@ public:
 };
 
 
-int main() {
+int objects_main() {
     int number_of_students;
     cin >> number_of_students;
     Student students[number_of_students];

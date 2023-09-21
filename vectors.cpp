@@ -6,7 +6,7 @@
 using namespace std;
 
 
-int main() {
+int vectors_main() {
     int main_arr_size;
     int number_queries;
     cin >> main_arr_size;

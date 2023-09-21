@@ -46,7 +46,7 @@ public:
 };
 
 
-int main() {
+int classes_main() {
     Student student;
     int age, standard;
     string first_name, last_name;

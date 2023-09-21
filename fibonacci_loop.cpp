@@ -17,7 +17,7 @@ int fib(int number) {
     return s;
 }
 
-int main() {
+int fib_main() {
     int number = 13;
     int result = fib(number);
     cout << endl;

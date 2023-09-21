@@ -5,14 +5,14 @@
 #include <algorithm>
 using namespace std;
 
-int fib(int number) {
+int fib_recursive(int number) {
     if (number <= 1) return number;
-    return fib(number - 2) + fib(number - 1);
+    return fib_recursive(number - 2) + fib_recursive(number - 1);
 }
 
-int main() {
+int fib_recursive_main() {
     int number = 13;
-    int result = fib(number);
+    int result = fib_recursive(number);
     cout << "result: " << result << endl;
     return 0;
 }

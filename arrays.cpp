@@ -5,8 +5,7 @@
 #include <algorithm>
 using namespace std;
 
-
-int main() {
+int arrays_main() {
     int arr_len;
     cin >> arr_len;
     int integers[arr_len];

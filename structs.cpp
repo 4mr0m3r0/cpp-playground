@@ -12,7 +12,7 @@ struct Student {
     int standard;
 };
 
-int main() {
+int structs_main() {
     Student student;
     cin >> student.age;
     cin >> student.first_name;

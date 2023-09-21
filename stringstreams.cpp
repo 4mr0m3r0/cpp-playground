@@ -15,7 +15,7 @@ vector<int> parseInts(string str) {
     return numbers;
 }
 
-int main() {
+int stringstreams_main() {
     string str;
     cin >> str;
     vector<int> integers = parseInts(str);
