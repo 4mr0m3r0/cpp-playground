@@ -1,13 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "algorithms/ValidateSubsequence.cpp"
+#include "algorithms/SortedSquaredArray.cpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    ValidateSubsequence validate_subsequence;
-    vector<int> array{5, 1, 22, 25, 6, -1, 8, 10};
-    vector<int> sequence{1, 6, -1, 10};
-    bool is_valid = validate_subsequence.isValidSubsequence(array, sequence);
-    cout << "is valid: " << is_valid << endl;
+    SortedSquaredArray sorted_squared_array;
+    vector<int> array{-50, -13, -2, -1, 0, 0, 1, 1, 2, 3, 19, 20};
+    vector<int> result = sorted_squared_array.SortedSquaredArrayON(array);
+    cout << "[";
+    for (auto squared : result) {
+        cout << " " << squared;
+    }
+    cout << " ]" << endl;
     return 0;
 }
