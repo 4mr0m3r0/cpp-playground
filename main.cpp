@@ -1,13 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "algorithms/TournamentWinner.cpp"
+#include "algorithms/NonConstructibleChange.cpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    TournamentWinner tournament_winner;
-    vector<vector<string>> competitions{{"HTML", "C#"}, {"C#", "Python"}, {"Python", "HTML"}};
-    vector<int> results {0, 0, 1};
-    string winner = tournament_winner.TournamentWinnerONSecondVariant(competitions, results);
-    cout << "The winner is: " << winner << endl;
+    NonConstructibleChange non_constructible_change;
+    vector<int> coins{5, 7, 1, 1, 2, 3, 22};
+    int minimum = non_constructible_change.NonConstructibleChangeONLogN(coins);
+    cout << "Minimum Change: " << minimum << endl;
     return 0;
 }
