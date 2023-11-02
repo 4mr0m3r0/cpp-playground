@@ -1,18 +1,19 @@
 #include <iostream>
 #include <vector>
-#include "algorithms/TransposeMatrix.cpp"
+#include "algorithms/arrays/JumpingOnTheClouds.cpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    TransposeMatrix transpose_matrix;
-    vector<vector<int>> input{vector<int>{1, 2, 3}, vector<int>{4, 5, 6}, vector<int>{7, 8, 9}};
-    vector<vector<int>> result = transpose_matrix.TransposeMatrixON2(input);
-    for (auto row : result) {
-        cout << "[ ";
-        for (auto column : row) {
-            cout << column << " ";
-        }
-        cout << "]" << endl;
-    }
+    JumpingOnTheClouds jumping_on_the_clouds;
+//    vector<int> clouds{0, 1, 0, 0, 0, 1, 0};
+//    vector<int> clouds{0, 0, 1, 0, 0, 1, 0};
+//    vector<int> clouds{0, 0, 0, 0, 1, 0};
+//    vector<int> clouds{0, 1, 1, 1, 1, 1};
+//    vector<int> clouds{0, 1, 1, 1, 1, 0};
+//    vector<int> clouds{0, 1, 1, 1, 0, 0};
+//    vector<int> clouds{0, 1, 0, 0, 0, 1, 1, 1, 0};
+    vector<int> clouds{0, 0, 0, 1, 0, 0};
+    int jumps = jumping_on_the_clouds.jumpingOnCloudsON(clouds);
+    cout << "Number of Jumps = " << jumps << endl;
     return 0;
 }
