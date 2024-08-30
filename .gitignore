@@ -2,6 +2,8 @@
 .DS_Store
 *.xcodeproj/
 DerivedData/
+.idea/
+.cache/
 
 CMakeLists.txt.user
 CMakeCache.txt
